@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+void update(int*,int*);
 void update(int *a,int *b) 
 {
     int A=*a;
