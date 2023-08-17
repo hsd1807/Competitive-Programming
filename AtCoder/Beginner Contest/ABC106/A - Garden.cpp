@@ -6,6 +6,6 @@ int main()
     cin.tie(0);cout.tie(0);
     int a,b;
     cin>>a>>b;
-    cout<<a*b-(a+b)+1;
+    cout<<(a-1)*(b-1);
     return 0;
 }
