@@ -21,7 +21,7 @@ int main()
                     sd=j*k-p*k;
                     sd=sd>0?sd:-sd;
                     hd=arr[i]-H;
-                    hd=hd>0?hd:-hd;
+                    hd=(hd>0?hd:-hd);
                     if(sd==hd) {count++;flag=1;
                     break;}
                     }
