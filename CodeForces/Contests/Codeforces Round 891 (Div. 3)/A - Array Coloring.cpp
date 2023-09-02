@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 int main()
 {
     ios::sync_with_stdio(false);
@@ -12,8 +11,7 @@ int main()
         int n,flag=1;
         cin>>n;
         int arr[n];
-        for(int i=0;i<n;i++)
-        {
+        for(int i=0;i<n;i++){
             cin>>arr[i];
         }
         int sum1=0,sum2=0;
