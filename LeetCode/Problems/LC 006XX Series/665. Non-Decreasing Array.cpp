@@ -2,7 +2,7 @@ class Solution {
 public:
     bool checkPossibility(vector<int>& nums) {
         int n=nums.size();
-        bool once=0;
+        bool once=false;
         for(int i=0;i<n-1;i++){
         if(!once)
         {
@@ -11,15 +11,15 @@ public:
                     nums[i+1]=nums[i];
                     else
                     nums[i]=nums[i+1];
-                    once=1;
+                    once=true;
                 }
         }
         else
         {
             if(nums[i]>nums[i+1])
-                return 0;
+                return false;
         }
         }
-        return 1;
+        return true;
     }
 };
