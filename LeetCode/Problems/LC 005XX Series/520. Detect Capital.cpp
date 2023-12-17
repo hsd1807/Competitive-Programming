@@ -5,7 +5,7 @@ public:
         for(int i=0;i<word.size();i++){
             if(word[i]<'a') uppercase++;
         }
-        if(uppercase==word.size() || uppercase==0 || (uppercase==1&&word[0]<97))
+        if(uppercase==word.size() || uppercase==0 || (uppercase==1&&word[0]<'a'))
             return true;
         else
             return false;
