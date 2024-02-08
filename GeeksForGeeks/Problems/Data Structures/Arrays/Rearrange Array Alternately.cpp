@@ -6,12 +6,7 @@ class Solution{
     //Function to rearrange  the array elements alternately.
     void rearrange(long long *arr, int n) 
     { 
-        int mx = INT_MIN;
-        for (int i = 0; i < n; i++) {
-            if (arr[i] > mx)
-                mx = arr[i];
-        }
-        mx++;
+        int mx = arr[n-1]; mx++;
         int start = 0, end = n - 1;
         for (int i = 0; i < n; i++) {
             if (i%2) {
