@@ -1,9 +1,9 @@
 class Solution {
 public:
     int ways(vector<int>& arr, int index, int sum, int target) {
-        if (index == arr.size()) {
-            if (sum == target) return 1;
-            else return 0;
+        if (index == arr.size())
+        {
+            return sum == target;
         }
         return ways(arr, index+1, sum+arr[index], target) + ways(arr, index+1, sum-arr[index], target);
     }
