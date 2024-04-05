@@ -3,15 +3,15 @@ public:
     int maxDepth(string s) {
         ios::sync_with_stdio(false);
         int ans = 0;
-        stack<char> depth;
+        int cnt = 0;
         for (int i = 0; i < s.size(); i++) {
             if (s[i] == '(') {
-                depth.push('(');
+                cnt++;
             }
             else if (s[i] == ')') {
-                depth.pop();
+                cnt--;
             }
-            ans = max(ans, (int) depth.size());
+            ans = max(ans, cnt);
         }
         return ans;
     }
